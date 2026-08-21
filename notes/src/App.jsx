@@ -1,25 +1,12 @@
 import React from 'react'
-import { fetchPhotos } from "../redux/MediaApi";
 
 export default function App() {
- 
   return (
     <div>
-      <button className='bg-white rounded p-3 m-5 text-black' onClick={async()=>{
-       const data = await fetchPhotos('cat')
-       console.log(data.results);
-       
-      }}>Get Photos</button>
-       <button className='bg-white rounded p-3 m-5 text-black' onClick={async()=>{
-       const data = await fetchPhotos('cat')
-       console.log(data.results);
-       
-      }}>Get Photos</button>
-       <button className='bg-white rounded p-3 m-5 text-black' onClick={async()=>{
-       const data = await fetchPhotos('cat')
-       console.log(data.results);
-       
-      }}>Get Photos</button>
+      <form className='m-5 w-full ' action="">
+        <input className='p-2 border border-amber-50' type="text" placeholder='Search Here' />
+        <button className='p-2 bg-black text-white font-medium'>Search</button>
+      </form>
     </div>
   )
 }
