@@ -34,7 +34,7 @@ export default function ResultGrid() {
     if(error) return <h1>Error</h1>
     if(loading) return <h1>Loading..</h1>
   return (
-    <div className='flex w-full flex-wrap gap-3 overflow-auto justify-center'>
+    <div className='flex w-full flex-wrap py-10 gap-3 overflow-auto justify-center'>
       {results.map((item,idx)=>{
         return <div key={idx}>
           <ResultCard item={item}/>
